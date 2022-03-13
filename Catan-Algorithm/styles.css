@@ -1,0 +1,532 @@
+:root {
+    --color: #9fe9ff;
+    --z: 0; 
+  }
+
+#title{
+    text-align: center;
+    user-select: none;
+}
+
+body{
+    background-color: #32cfff;
+}
+
+br{
+    user-select: none;
+}
+
+.hex {
+    position: absolute;
+    margin: 0 auto;
+    background-color: var(--color);
+    border-radius: 10px;
+    width: 100px;  /*split*/
+    height: 63px;  /*split*/
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 0.4vh solid transparent;  /*split*/
+    user-select: none;
+    z-index: var(--z);;
+}
+  
+/* Creating pseudo-class */
+.hex:before, .hex:after {
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: -0.5vh;   /*split*/
+    left: -0.5vh;  /*split*/
+    border-radius: inherit;
+    background-color: var(--color);
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    z-index: var(--z);;
+}
+  
+/* Align them in such a way
+that they form a hexagon */
+.hex:before {
+    transform: rotate(60deg);
+    user-select: none;
+
+}
+.hex:after {
+    transform: rotate(-60deg);
+    user-select: none;
+}
+
+group{
+    display: flex;
+    justify-content: center; 
+}
+
+#hex1, #hex2, #hex3{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    margin: 1px;
+}
+#hex4, #hex5, #hex6, #hex7{
+    display: inline-block;
+    position: relative;
+    top:55px;
+    margin: 1px;
+}
+#hex8, #hex9, #hex10, #hex11, #hex12{
+    display: inline-block;
+    position: relative;
+    top:60px;
+    margin: 1px;
+}
+
+#hex13, #hex14, #hex15, #hex16{
+    display: inline-block;
+    position: relative;
+    top:65px;
+    margin: 1px;
+}
+
+#hex17, #hex18, #hex19{
+    display: inline-block;
+    position: relative;
+    top:70px;
+    margin: 1px;
+}
+
+#num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8, #num9, #num10, #num11, #num12, #num13, #num14, #num15, #num16, #num17, #num18, #num19  {
+    position: relative;
+    bottom:20px;
+    left: 25px;
+    z-index:9;
+    width: 45px;
+    height: 40px;
+    padding-top: 5px;
+    background-color:#d2af77;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#TheButton{
+    text-align:center;
+}
+
+#button1, #button2{
+    height: 40px;
+    border-radius: 10px
+}
+
+#button3{
+    position: relative;
+    top: 120px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 17px
+}
+.score {
+    width: 40px;
+    height: 30px;
+    border-radius: 10%;
+    text-align: center;
+    padding-top: 10px;
+    color: transparent;
+    z-index: 15;
+}
+
+#spot1{
+    position: relative;
+    margin: auto;
+    right: 103px;
+    bottom: 330px;
+}
+#spot2{
+    position: relative;
+    margin: auto;
+    right: 50px;
+    bottom: 380px;
+}
+#spot3{
+    position: relative;
+    margin: auto;
+    left: 3px;
+    bottom: 400px;
+}
+#spot4{
+    position: relative;
+    margin: auto;
+    left: 53px;
+    bottom: 460px;
+}
+#spot5{
+    position: relative;
+    margin: auto;
+    left: 103px;
+    bottom: 480px;
+}
+#spot6{
+    position: relative;
+    margin: auto;
+    left: 103px;
+    bottom: 460px;
+}
+#spot7{
+    position: relative;
+    margin: auto;
+    left: 153px;
+    bottom: 475px;
+}
+#spot8{
+    position: relative;
+    margin: auto;
+    left: 153px;
+    bottom: 450px;
+}
+#spot9{
+    position: relative;
+    margin: auto;
+    left: 103px;
+    bottom: 470px;
+}
+#spot10{
+    position: relative;
+    margin: auto;
+    left: 103px;
+    bottom: 440px;
+}
+#spot11{
+    position: relative;
+    margin: auto;
+    left: 53px;
+    bottom: 460px;
+}
+#spot12{
+    position: relative;
+    margin: auto;
+    left: 3px;
+    bottom: 520px;
+}
+#spot13{
+    position: relative;
+    margin: auto;
+    right: 50px;
+    bottom: 540px;
+}
+#spot14{
+    position: relative;
+    margin: auto;
+    right: 100px;
+    bottom: 600px;
+}
+#spot15{
+    position: relative;
+    margin: auto;
+    right: 100px;
+    bottom: 700px;
+}
+#spot16{
+    position: relative;
+    margin: auto;
+    right: 150px;
+    bottom: 770px;
+}
+#spot17{
+    position: relative;
+    margin: auto;
+    right: 150px;
+    bottom: 875px;
+}
+#spot18{
+    position: relative;
+    margin: auto;
+    right: 100px;
+    bottom: 935px;
+}
+#spot19{
+    position: relative;
+    margin: auto;
+    right: 50px;
+    bottom: 960px;
+}
+#spot20{
+    position: relative;
+    margin: auto;
+    right: 0px;
+    bottom: 1015px;
+}
+#spot21{
+    position: relative;
+    margin: auto;
+    left: 50px;
+    bottom: 1035px;
+}
+#spot22{
+    position: relative;
+    margin: auto;
+    left: 50px;
+    bottom: 1005px;
+}
+#spot23{
+    position: relative;
+    margin: auto;
+    left: 3px;
+    bottom: 1025px;
+}
+#spot24{
+    position: relative;
+    margin: auto;
+    right: 50px;
+    bottom: 1090px;
+}
+
+@media only screen and (max-width: 530px) {
+    body{
+        height: 545px
+    }
+    .hex {
+        position: absolute;
+        margin: 0 auto;
+        background-color: var(--color);
+        border-radius: 5px; /*split*/
+        width: 50px;  /*split*/
+        height: 31.5px;  /*split*/
+        box-sizing: border-box;
+        transition: all 1s;
+        border: 0.2vh solid transparent;  /*split*/
+        user-select: none;
+        z-index: var(--z);;
+    }
+      
+    /* Creating pseudo-class */
+    .hex:before, .hex:after {
+        content: "";
+        border: inherit;
+        position: absolute;
+        top: -0.25vh;   /*split*/
+        left: -0.25vh;  /*split*/
+        border-radius: inherit;
+        background-color: var(--color);
+        height: 100%;
+        width: 100%;
+        user-select: none;
+        z-index: var(--z);;
+    }
+      
+    /* Align them in such a way
+    that they form a hexagon */
+    .hex:before {
+        transform: rotate(60deg);
+        user-select: none;
+    
+    }
+    .hex:after {
+        transform: rotate(-60deg);
+        user-select: none;
+    }
+    #num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8, #num9, #num10, #num11, #num12, #num13, #num14, #num15, #num16, #num17, #num18, #num19  {
+        position: relative;
+        bottom:10px;
+        left: 12.5px;
+        z-index:9;
+        width: 22.5px;
+        height: 20px;
+        padding-top: 2.5px;
+        background-color:#d2af77;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 15px;
+    }
+    #hex1, #hex2, #hex3{
+        display: inline-block;
+        position: relative;
+        top: 40px;
+        margin: 1px;
+    }
+    #hex4, #hex5, #hex6, #hex7{
+        display: inline-block;
+        position: relative;
+        top: 33px;
+        margin: 1px;
+    }
+    #hex8, #hex9, #hex10, #hex11, #hex12{
+        display: inline-block;
+        position: relative;
+        top: 26px;
+        margin: 1px;
+    }
+    
+    #hex13, #hex14, #hex15, #hex16{
+        display: inline-block;
+        position: relative;
+        top: 19px;
+        margin: 1px;
+    }
+    
+    #hex17, #hex18, #hex19{
+        display: inline-block;
+        position: relative;
+        top: 12px;
+        margin: 1px;
+    }
+    .score {
+        width: 20px;
+        height: 15px;
+        border-radius: 10%;
+        text-align: center;
+        padding-top: 5px;
+        color: transparent;
+        z-index: 15;
+        font-size: 11px;
+    }
+    #button3{
+        position: relative;
+        top: 50px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 17px
+    }
+    #spot1{
+        position: relative;
+        margin: auto;
+        right: 51.5px;
+        bottom: 210px;
+    }
+    #spot2{
+        position: relative;
+        margin: auto;
+        right: 25px;
+        bottom: 240px;
+    }
+    #spot3{
+        position: relative;
+        margin: auto;
+        left: 1px;
+        bottom: 250px;
+    }
+    #spot4{
+        position: relative;
+        margin: auto;
+        left: 26px;
+        bottom: 280px;
+    }
+    #spot5{
+        position: relative;
+        margin: auto;
+        left: 51px;
+        bottom: 290px;
+    }
+    #spot6{
+        position: relative;
+        margin: auto;
+        left: 51px;
+        bottom: 275px;
+    }
+    #spot7{
+        position: relative;
+        margin: auto;
+        left: 78px;
+        bottom: 285px;
+    }
+    #spot8{
+        position: relative;
+        margin: auto;
+        left: 78px;
+        bottom: 270px;
+    }
+    #spot9{
+        position: relative;
+        margin: auto;
+        left: 51px;
+        bottom: 277px;
+    }
+    #spot10{
+        position: relative;
+        margin: auto;
+        left: 51px;
+        bottom: 262px;
+    }
+    #spot11{
+        position: relative;
+        margin: auto;
+        left: 26px;
+        bottom: 272px;
+    }
+    #spot12{
+        position: relative;
+        margin: auto;
+        left: 1px;
+        bottom: 300px;
+    }
+    #spot13{
+        position: relative;
+        margin: auto;
+        right: 25px;
+        bottom: 312.5px;
+    }
+    #spot14{
+        position: relative;
+        margin: auto;
+        right: 51px;
+        bottom: 341px;
+    }
+    #spot15{
+        position: relative;
+        margin: auto;
+        right: 50px;
+        bottom: 397px;
+    }
+    #spot16{
+        position: relative;
+        margin: auto;
+        right: 78px;
+        bottom: 430px;
+    }
+    #spot17{
+        position: relative;
+        margin: auto;
+        right: 78px;
+        bottom: 483px;
+    }
+    #spot18{
+        position: relative;
+        margin: auto;
+        right: 51px;
+        bottom: 515px;
+    }
+    #spot19{
+        position: relative;
+        margin: auto;
+        right: 25px;
+        bottom: 523px;
+    }
+    #spot20{
+        position: relative;
+        margin: auto;
+        right: 0px;
+        bottom: 555px;
+    }
+    #spot21{
+        position: relative;
+        margin: auto;
+        left: 25px;
+        bottom: 563px;
+    }
+    #spot22{
+        position: relative;
+        margin: auto;
+        left: 25px;
+        bottom: 550px;
+    }
+    #spot23{
+        position: relative;
+        margin: auto;
+        left: 0px;
+        bottom: 556px;
+    }
+    #spot24{
+        position: relative;
+        margin: auto;
+        right: 25px;
+        bottom: 590px;
+    }
+}
