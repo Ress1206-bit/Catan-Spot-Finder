@@ -6,13 +6,6 @@ Catan Spot Finder is a web application designed to help players of the board gam
 
 **Works on both phone and computer.**
 
-## Table of Contents
-1. [Usage](#usage)
-2. [Configuration](#configuration)
-3. [Acknowledgements](#acknowledgements)
-4. [Contact](#contact)
-5. [Changelog](#changelog)
-
 ## Usage
 
 Visit the application at [Catan Spot Finder](https://catanspotfinder.netlify.app/).
