@@ -17,7 +17,6 @@ Visit the application at [Catan Spot Finder](https://catanspotfinder.netlify.app
 2. **Generate Best Spots:**
    - After setting up the board, click the "GENERATE BEST SPOTS" button.
    - The top 16 spots for placing settlements will be highlighted with a ranking from #1 to #16.
-   - 
 
 ## Acknowledgements
 
